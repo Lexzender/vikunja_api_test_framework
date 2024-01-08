@@ -14,7 +14,7 @@ from vikunja_api_test_framework.utils.utils import load_schema
 @allure.severity('critical')
 def test_login_user_succsessfuly():
     data = created_user
-    with allure.step("Отправляем запрос на получение jwt токена"):
+    with allure.step("Отправляем запрос на авторизацию"):
         results = API_request("login", "post", json=data)
 
     with allure.step("Проверяем, что в ответе статус код == 200"):

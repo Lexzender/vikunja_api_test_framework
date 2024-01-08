@@ -1,0 +1,92 @@
+{
+
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "identifier": {
+      "type": "string"
+    },
+    "hex_color": {
+      "type": "string"
+    },
+    "parent_project_id": {
+      "type": "integer"
+    },
+    "default_bucket_id": {
+      "type": "integer"
+    },
+    "done_bucket_id": {
+      "type": "integer"
+    },
+    "owner": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "username": {
+          "type": "string"
+        },
+        "created": {
+          "type": "string"
+        },
+        "updated": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "username",
+        "created",
+        "updated"
+      ]
+    },
+    "is_archived": {
+      "type": "boolean"
+    },
+    "background_information": {
+      "type": "null"
+    },
+    "background_blur_hash": {
+      "type": "string"
+    },
+    "is_favorite": {
+      "type": "boolean"
+    },
+    "position": {
+      "type": "integer"
+    },
+    "created": {
+      "type": "string"
+    },
+    "updated": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "title",
+    "description",
+    "identifier",
+    "hex_color",
+    "parent_project_id",
+    "default_bucket_id",
+    "done_bucket_id",
+    "owner",
+    "is_archived",
+    "background_information",
+    "background_blur_hash",
+    "is_favorite",
+    "position",
+    "created",
+    "updated"
+  ]
+}

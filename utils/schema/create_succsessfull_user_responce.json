@@ -1,0 +1,35 @@
+{
+ "title": "User Data",
+ "description": "Data for user",
+ "type": "object",
+ "properties": {
+ "created": {
+   "description": "A timestamp when this task was created. You cannot change this value.",
+   "type": "string"
+ },
+ "email": {
+   "description": "The user's email address.",
+   "type": "string",
+   "maxLength": 250
+ },
+ "id": {
+   "description": "The unique, numeric id of this user.",
+   "type": "integer"
+ },
+ "name": {
+   "description": "The full name of the user.",
+   "type": "string"
+ },
+ "updated": {
+   "description": "A timestamp when this task was last updated. You cannot change this value.",
+   "type": "string"
+ },
+ "username": {
+   "description": "The username of the user. Is always unique.",
+   "type": "string",
+   "minLength": 1,
+   "maxLength": 250
+ }
+ },
+ "required": ["created", "email", "id", "name", "updated", "username"]
+}

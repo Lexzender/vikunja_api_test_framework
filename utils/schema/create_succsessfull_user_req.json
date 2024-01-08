@@ -1,0 +1,22 @@
+{
+   "type": "object",
+   "properties": {
+       "email": {
+           "type": "string",
+           "maxLength": 250
+       },
+       "password": {
+           "type": "string",
+           "minLength": 8,
+           "maxLength": 250
+       },
+       "username": {
+           "type": "string",
+           "minLength": 3,
+           "maxLength": 250,
+           "pattern": "^(?!.*\\s)(?!.*\\/).*$"
+       }
+   },
+   "required": ["email", "password", "username"],
+   "additionalProperties": false
+}

@@ -1,0 +1,79 @@
+{
+ "type": "object",
+ "properties": {
+   "background_blur_hash": {
+     "type": "string",
+     "description": "Contains a very small version of the project background to use as a blurry preview until the actual background is loaded."
+   },
+   "background_information": {
+     "type": ["null", "object"],
+     "description": "Holds extra information about the background set since some background providers require attribution or similar."
+   },
+   "created": {
+     "type": "string",
+     "description": "A timestamp when this project was created."
+   },
+   "default_bucket_id": {
+     "type": "integer",
+     "description": "The ID of the bucket where new tasks without a bucket are added to."
+   },
+   "description": {
+     "type": "string",
+     "description": "The description of the project."
+   },
+   "done_bucket_id": {
+     "type": "integer",
+     "description": "If tasks are moved to the done bucket, they are marked as done."
+   },
+   "hex_color": {
+     "type": "string",
+     "maxLength": 7,
+     "description": "The hex color of this project."
+   },
+   "id": {
+     "type": "integer",
+     "description": "The unique, numeric id of this project."
+   },
+   "identifier": {
+     "type": "string",
+     "minLength": 0,
+     "maxLength": 10,
+     "description": "The unique project short identifier."
+   },
+   "is_archived": {
+     "type": "boolean",
+     "description": "Whether a project is archived."
+   },
+   "is_favorite": {
+     "type": "boolean",
+     "description": "True if a project is a favorite."
+   },
+   "owner": {
+     "type": "object",
+     "description": "The user who created this project."
+   },
+   "parent_project_id": {
+     "type": "integer",
+     "description": "The ID of the parent project."
+   },
+   "position": {
+     "type": "number",
+     "description": "The position this project has when querying all projects."
+   },
+   "subscription": {
+     "type": "object",
+     "description": "The subscription status for the user reading this project."
+   },
+   "title": {
+     "type": "string",
+     "minLength": 1,
+     "maxLength": 250,
+     "description": "The title of the project."
+   },
+   "updated": {
+     "type": "string",
+     "description": "A timestamp when this project was last updated."
+   }
+ },
+ "required": ["background_blur_hash", "created", "default_bucket_id", "description", "done_bucket_id", "hex_color", "id", "identifier", "is_archived", "is_favorite", "owner", "parent_project_id", "position", "title", "updated"]
+}

@@ -1,7 +1,9 @@
 import allure
+import jsonschema
 
 from tests.conftest import API_request
 from tests.test_create_user import created_user
+from vikunja_api_test_framework.utils.utils import load_schema
 
 
 @allure.title('Successful authorization')
@@ -17,6 +19,10 @@ def test_login_user_succsessfuly():
 
     with allure.step("Проверяем, что в ответе статус код == 200"):
         assert results.status_code == 200
+
+    with allure.step("Проверяем, что тело ответа совпадает с json_схемой"):
+        schema_res = load_schema("login_user_responce.json")
+        jsonschema.validate(results.json(), schema_res)
 
     with allure.step("Сохраняем jwt токен из ответа"):
         jwt_token = results.json()["token"]

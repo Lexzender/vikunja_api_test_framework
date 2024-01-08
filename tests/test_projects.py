@@ -1,12 +1,18 @@
 import allure
 import jsonschema
 
-from tests.test_create_user import API_request
+from tests.conftest import API_request
 from tests.test_login import test_login_user_succsessfuly
-from utils.utils import load_schema
+from vikunja_api_test_framework.utils.utils import load_schema
 
 project_id = ""
 
+@allure.title('Creating a new project')
+@allure.feature('Creating a new project with API')
+@allure.label('layer', 'API')
+@allure.label('owner', 'Kostromin')
+@allure.tag('regress', 'API')
+@allure.severity('critical')
 def test_create_new_projects():
     global project_id
 
@@ -14,7 +20,7 @@ def test_create_new_projects():
         jwt_token = test_login_user_succsessfuly()
 
     headers = {'Authorization': f"Bearer {jwt_token}"}
-    data =  {
+    data = {
         "title": "Тестовый проект 2",
         "description": "",
         "identifier": "",
@@ -39,7 +45,7 @@ def test_create_new_projects():
     }
 
     with allure.step("Отправляем запрос на создание нового проекта"):
-        results = API_request("projects","put",headers=headers, json=data)
+        results = API_request("projects", "put", headers=headers, json=data)
 
     with allure.step("Проверяем, что в ответе статус код == 201"):
         assert results.status_code == 201
@@ -54,17 +60,20 @@ def test_create_new_projects():
     with allure.step("Сохраняем id проекта"):
         project_id = str(results.json()["id"])
 
-
+@allure.title('Get projects by id')
+@allure.feature('Get projects by id with API')
+@allure.label('layer', 'API')
+@allure.label('owner', 'Kostromin')
+@allure.tag('regress', 'API')
+@allure.severity('critical')
 def test_Get_projects_by_id():
-
-
     with allure.step("Авторизуемся и получаем jwt_token"):
         jwt_token = test_login_user_succsessfuly()
 
     headers = {'Authorization': f"Bearer {jwt_token}"}
 
     with allure.step("Отправляем запрос на получение проекта"):
-        results = API_request(f"projects/{project_id}","get",headers=headers)
+        results = API_request(f"projects/{project_id}", "get", headers=headers)
 
     with allure.step("Проверяем, что в ответе статус код == 200"):
         assert results.status_code == 200
@@ -76,6 +85,12 @@ def test_Get_projects_by_id():
         schema_res = load_schema("get_projects_id_responce.json")
         jsonschema.validate(results.json(), schema_res)
 
+@allure.title('Delete projects')
+@allure.feature('Delete projects with API')
+@allure.label('layer', 'API')
+@allure.label('owner', 'Kostromin')
+@allure.tag('regress', 'API')
+@allure.severity('critical')
 def test_delete_projects():
     with allure.step("Авторизуемся и получаем jwt_token"):
         jwt_token = test_login_user_succsessfuly()

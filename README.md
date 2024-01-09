@@ -1,5 +1,6 @@
 # Фреймворк для автоматизации тестирования API Petstore
 <img align="center" src="https://github.com/Lexzender/vikunja_api_test_framework/blob/main/vikunja_api_test_framework/pictures/vikunja.png" />
+
 ---
 
 ## Особенности проекта
@@ -36,7 +37,7 @@ pytest -s -v
 2) Нажать "Build with Parameters"
 3) Заполнить параметры 
 4) Нажать "Build"
-<img align="center" src="https://github.com/Lexzender/luma_UI_test_framework/blob/main/luma_UI_test_framework/pictures/jenkins.png" />
+<img align="center" src="https://github.com/Lexzender/vikunja_api_test_framework/blob/main/vikunja_api_test_framework/pictures/jenkins_api.png" />
 
 ---
 

@@ -33,7 +33,7 @@ pytest -s -v
 Или в Jenkins
 ### Запуск проекта в Jenkins
 
-1) Открыть [проект](https://jenkins.autotests.cloud/job/luma_UI_test_framework/)
+1) Открыть [проект](https://jenkins.autotests.cloud/job/vikunja_api_test_framework/)
 2) Нажать "Build with Parameters"
 3) Заполнить параметры 
 4) Нажать "Build"

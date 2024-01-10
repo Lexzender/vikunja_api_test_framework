@@ -56,3 +56,12 @@ pytest -s -v
 ### Тестовые артефакты 
 <img align="center" src="https://github.com/Lexzender/vikunja_api_test_framework/blob/main/vikunja_api_test_framework/pictures/tk_api.png" />
 
+---
+## Интеграция с Jira
+<img align="center" src="https://github.com/Lexzender/vikunja_api_test_framework/blob/main/vikunja_api_test_framework/pictures/jira_api.png" />
+
+---
+## Нотификация в Telegram
+После прохождения тестов результаты будут отправлены в Telegram
+<img align="center" src="https://github.com/Lexzender/vikunja_api_test_framework/blob/main/vikunja_api_test_framework/pictures/Telegram_api.png" />
+

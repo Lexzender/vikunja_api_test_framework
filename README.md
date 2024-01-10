@@ -47,3 +47,12 @@ pytest -s -v
 
 ### В отчете для каждого теста указана мета информация, а также приложены результаты прохождения: отчеты с request body, response body, status code.
 <img align="center" src="https://github.com/Lexzender/vikunja_api_test_framework/blob/main/vikunja_api_test_framework/pictures/behaaviors_api.png" />
+
+---
+## Интеграция с Allure TestOps
+### Тест кейсы
+<img align="center" src="https://github.com/Lexzender/vikunja_api_test_framework/blob/main/vikunja_api_test_framework/pictures/test%20%20cases_api.png" />
+
+### Тестовые артефакты 
+<img align="center" src="https://github.com/Lexzender/vikunja_api_test_framework/blob/main/vikunja_api_test_framework/pictures/tk_api.png" />
+

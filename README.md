@@ -42,4 +42,8 @@ pytest -s -v
 ---
 
 ## Allure report
-### После прохождения тестов, результаты можно посмотреть в Allure отчете
+### После прохождения тестов результаты можно посмотреть в Allure отчете
+<img align="center" src="https://github.com/Lexzender/vikunja_api_test_framework/blob/main/vikunja_api_test_framework/pictures/allure_api.png" />
+
+### В отчете для каждого теста указана мета информация, а также приложены результаты прохождения: отчеты с request body, response body, status code.
+<img align="center" src="https://github.com/Lexzender/vikunja_api_test_framework/blob/main/vikunja_api_test_framework/pictures/behaaviors_api.png" />

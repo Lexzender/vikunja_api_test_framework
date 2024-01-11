@@ -31,7 +31,8 @@ pip install -r requirements.txt
 pytest -s -v 
 ```
 Или в Jenkins
-### Запуск проекта в Jenkins
+
+### <code><img width="3%" title="Jenkins" src="https://github.com/Lexzender/Lexzender/blob/main/images/jenkins-original.svg"></code> Запуск проекта в Jenkins
 
 1) Открыть [проект](https://jenkins.autotests.cloud/job/vikunja_api_test_framework/)
 2) Нажать "Build with Parameters"
@@ -41,7 +42,7 @@ pytest -s -v
 
 ---
 
-## Allure report
+## <code><img width="3%" title="Allure_Report" src="https://github.com/Lexzender/Lexzender/blob/main/images/Allure_Report.png"></code> Allure report
 ### После прохождения тестов результаты можно посмотреть в Allure отчете
 <img align="center" src="https://github.com/Lexzender/vikunja_api_test_framework/blob/main/vikunja_api_test_framework/pictures/allure_api.png" />
 
@@ -49,7 +50,7 @@ pytest -s -v
 <img align="center" src="https://github.com/Lexzender/vikunja_api_test_framework/blob/main/vikunja_api_test_framework/pictures/behaaviors_api.png" />
 
 ---
-## Интеграция с Allure TestOps
+## <code><img width="3%" title="AllureTestOps.png" src="https://github.com/Lexzender/Lexzender/blob/main/images/AllureTestOps.png"></code> Интеграция с Allure TestOps
 ### Тест кейсы
 <img align="center" src="https://github.com/Lexzender/vikunja_api_test_framework/blob/main/vikunja_api_test_framework/pictures/test%20%20cases_api.png" />
 
@@ -57,11 +58,11 @@ pytest -s -v
 <img align="center" src="https://github.com/Lexzender/vikunja_api_test_framework/blob/main/vikunja_api_test_framework/pictures/tk_api.png" />
 
 ---
-## Интеграция с Jira
+## <code><img width="3%" title="Jira.png" src="https://github.com/Lexzender/Lexzender/blob/main/images/jira-original.svg"></code> Интеграция с Jira
 <img align="center" src="https://github.com/Lexzender/vikunja_api_test_framework/blob/main/vikunja_api_test_framework/pictures/jira_api.png" />
 
 ---
-## Нотификация в Telegram
+## <code><img width="3%" title="Telegram" src="https://github.com/Lexzender/Lexzender/blob/main/images/tg.png"></code> Нотификация в Telegram
 После прохождения тестов результаты будут отправлены в Telegram
 <img align="center" src="https://github.com/Lexzender/vikunja_api_test_framework/blob/main/vikunja_api_test_framework/pictures/Telegram_api.png" />
 
